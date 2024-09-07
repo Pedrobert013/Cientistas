@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cientistas</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cientistas Que Fizeram História</h1>
+    </header>
+    <main>
+        <section >
+            <input  type="text" placeholder="Pesquise por Nome, Link da Wikipédia ou Palavras-Chave" id=campo-pesquisa>
+            <button onclick="pesquisar()">Pesquisar</button>
+        </section>
+        <section class="resultados-pesquisa"
+            id="resultados-pesquisa">
+            
+            <!--<div class="item-resultado">
+              <h2><a href="#" target="_blank">Tales de Mileto</a></h2>
+              <p class="descricao-meta">
+                Tales de Mileto foi um filósofo e matemático grego, conhecido por ser um dos primeiros a usar princípios geométricos e lógicos em suas investigações, como o teorema de Tales.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Tales_de_Mileto" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Pitágoras</a></h2>
+              <p class="descricao-meta">
+                Pitágoras foi um filósofo e matemático grego, famoso pelo teorema de Pitágoras, que relaciona os lados de um triângulo retângulo.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Pit%C3%A1goras" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Aristóteles</a></h2>
+              <p class="descricao-meta">
+                Aristóteles foi um filósofo grego que fez contribuições significativas para a lógica, biologia, física e ética, influenciando a ciência e a filosofia ocidental.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Arist%C3%B3teles" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Euclides</a></h2>
+              <p class="descricao-meta">
+                Euclides foi um matemático grego, conhecido como o "pai da geometria", autor da obra "Os Elementos", que sistematizou o conhecimento geométrico da época.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Euclides" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Arquimedes</a></h2>
+              <p class="descricao-meta">
+                Arquimedes foi um matemático, físico e engenheiro grego, célebre por suas contribuições à hidrostática e mecânica, além de invenções como a "parafuso de Arquimedes".
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Arquimedes" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Nicolau Copérnico</a></h2>
+              <p class="descricao-meta">
+                Nicolau Copérnico foi um astrônomo polonês que desenvolveu o modelo heliocêntrico do sistema solar, revolucionando a astronomia moderna.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Nicolau_Cop%C3%A9rnico" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Galileu Galilei</a></h2>
+              <p class="descricao-meta">
+                Galileu Galilei foi um físico e astrônomo italiano, pioneiro no uso do telescópio para observações astronômicas e defensor do heliocentrismo.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Galileu_Galilei" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Isaac Newton</a></h2>
+              <p class="descricao-meta">
+                Isaac Newton foi um físico e matemático inglês, famoso por suas leis do movimento e da gravitação universal, além de grandes contribuições ao cálculo.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Isaac_Newton" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">René Descartes</a></h2>
+              <p class="descricao-meta">
+                René Descartes foi um filósofo e matemático francês, pioneiro na filosofia moderna e criador da geometria analítica, que conecta álgebra e geometria.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Ren%C3%A9_Descartes" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Gottfried Wilhelm Leibniz</a></h2>
+              <p class="descricao-meta">
+                Leibniz foi um filósofo e matemático alemão, um dos inventores do cálculo, conhecido por seu trabalho sobre o sistema binário e a lógica.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz" target="_blank">Mais Informações</a>
+            </div>
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Michael Faraday</a></h2>
+              <p class="descricao-meta">
+                Michael Faraday foi um físico e químico inglês, conhecido por suas descobertas em eletromagnetismo e eletroquímica, como a indução eletromagnética.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Michael_Faraday" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Charles Darwin</a></h2>
+              <p class="descricao-meta">
+                Charles Darwin foi um naturalista britânico, famoso por sua teoria da evolução através da seleção natural, apresentada no livro "A Origem das Espécies".
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Charles_Darwin" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">James Clerk Maxwell</a></h2>
+              <p class="descricao-meta">
+                James Clerk Maxwell foi um físico escocês que formulou a teoria clássica do eletromagnetismo, unificando eletricidade, magnetismo e luz.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/James_Clerk_Maxwell" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Marie Curie</a></h2>
+              <p class="descricao-meta">
+                Marie Curie foi uma física e química polonesa, pioneira no estudo da radioatividade, sendo a primeira mulher a ganhar um Prêmio Nobel.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Marie_Curie" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Albert Einstein</a></h2>
+              <p class="descricao-meta">
+                Albert Einstein foi um físico teórico alemão, mais conhecido por sua teoria da relatividade, que revolucionou a física moderna.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Albert_Einstein" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Niels Bohr</a></h2>
+              <p class="descricao-meta">
+                Niels Bohr foi um físico dinamarquês que fez importantes contribuições à compreensão da estrutura atômica e da mecânica quântica.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Niels_Bohr" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Alan Turing</a></h2>
+              <p class="descricao-meta">
+                Alan Turing foi um matemático e cientista da computação britânico, considerado o pai da ciência da computação e precursor da inteligência artificial.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Alan_Turing" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Richard Feynman</a></h2>
+              <p class="descricao-meta">
+                Richard Feynman foi um físico teórico americano, conhecido por seu trabalho em eletrodinâmica quântica e seu estilo pedagógico único.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Richard_Feynman" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Stephen Hawking</a></h2>
+              <p class="descricao-meta">
+                Stephen Hawking foi um físico teórico britânico, famoso por seu trabalho sobre buracos negros e pela popularização da ciência em livros como "Uma Breve História do Tempo".
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Stephen_Hawking" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Rosalind Franklin</a></h2>
+              <p class="descricao-meta">
+                Rosalind Franklin foi uma química britânica cujas imagens de difração de raios X do DNA foram cruciais para a descoberta da sua estrutura em dupla hélice.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Rosalind_Franklin" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Jane Goodall</a></h2>
+              <p class="descricao-meta">
+                Jane Goodall é uma primatóloga britânica, famosa por seus estudos pioneiros sobre o comportamento social e familiar dos chimpanzés.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Jane_Goodall" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Carl Sagan</a></h2>
+              <p class="descricao-meta">
+                Carl Sagan foi um astrônomo e divulgador científico americano, conhecido por popularizar a ciência em programas como "Cosmos" e seus estudos sobre vida extraterrestre.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Carl_Sagan" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Linus Pauling</a></h2>
+              <p class="descricao-meta">
+                Linus Pauling foi um químico americano, ganhador de dois Prêmios Nobel, conhecido por seu trabalho sobre ligações químicas e advocacia pela paz.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Linus_Pauling" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Erwin Schrödinger</a></h2>
+              <p class="descricao-meta">
+                Erwin Schrödinger foi um físico austríaco, famoso por sua contribuição à mecânica quântica e pela equação de Schrödinger.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Werner Heisenberg</a></h2>
+              <p class="descricao-meta">
+                Werner Heisenberg foi um físico alemão, um dos pioneiros da mecânica quântica, conhecido pelo princípio da incerteza.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Werner_Heisenberg" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Max Planck</a></h2>
+              <p class="descricao-meta">
+                Max Planck foi um físico alemão, conhecido como o fundador da teoria quântica, que revolucionou nossa compreensão da física atômica e subatômica.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Max_Planck" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Louis Pasteur</a></h2>
+              <p class="descricao-meta">
+                Louis Pasteur foi um químico e microbiologista francês, conhecido por suas descobertas sobre a pasteurização e o desenvolvimento de vacinas.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Louis_Pasteur" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Antoine Lavoisier</a></h2>
+              <p class="descricao-meta">
+                Antoine Lavoisier foi um químico francês, considerado o pai da química moderna, conhecido por sua descoberta da lei da conservação da massa.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Antoine_Lavoisier" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Gregor Mendel</a></h2>
+              <p class="descricao-meta">
+                Gregor Mendel foi um monge e cientista austríaco, conhecido como o pai da genética por seus experimentos com ervilhas que estabeleceram as leis da hereditariedade.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Gregor_Mendel" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+                 <h2><a href="#" target="_blank">Charles-Augustin de Coulomb</a></h2>
+              <p class="descricao-meta">
+                Charles-Augustin de Coulomb foi um físico francês, conhecido por suas pesquisas sobre eletricidade e magnetismo, e pela lei de Coulomb, que descreve a força entre cargas elétricas.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Charles-Augustin_de_Coulomb" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Jennifer Doudna</a></h2>
+              <p class="descricao-meta">
+                Jennifer Doudna é uma bioquímica americana, co-inventora da técnica de edição genética CRISPR-Cas9, uma ferramenta revolucionária para a edição do DNA.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Jennifer_Doudna" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Emmanuelle Charpentier</a></h2>
+              <p class="descricao-meta">
+                Emmanuelle Charpentier é uma microbiologista francesa, co-descobridora da tecnologia CRISPR-Cas9, que permite a edição precisa de genomas.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Emmanuelle_Charpentier" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Kip Thorne</a></h2>
+              <p class="descricao-meta">
+                Kip Thorne é um físico teórico americano, conhecido por seu trabalho sobre gravidade, buracos negros e ondas gravitacionais, e por suas colaborações com o LIGO.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Kip_Thorne" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Elon Musk</a></h2>
+              <p class="descricao-meta">
+                Elon Musk é um empreendedor sul-africano, fundador da SpaceX e Tesla, conhecido por seus esforços na exploração espacial, transporte sustentável e inteligência artificial.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Elon_Musk" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Jeff Bezos</a></h2>
+              <p class="descricao-meta">
+                Jeff Bezos é um empresário americano, fundador da Amazon e da Blue Origin, sendo um dos principais impulsionadores do comércio eletrônico e da exploração espacial.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Jeff_Bezos" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Tim Berners-Lee</a></h2>
+              <p class="descricao-meta">
+                Tim Berners-Lee é um cientista da computação britânico, inventor da World Wide Web, o sistema de navegação pela internet que transformou a comunicação global.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Katherine Johnson</a></h2>
+              <p class="descricao-meta">
+                Katherine Johnson foi uma matemática americana que contribuiu significativamente para a NASA, calculando trajetórias para os primeiros voos espaciais tripulados dos EUA.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Katherine_Johnson" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Tu Youyou</a></h2>
+              <p class="descricao-meta">
+                Tu Youyou é uma farmacologista chinesa, conhecida por descobrir a artemisinina, um tratamento eficaz contra a malária, o que lhe rendeu o Prêmio Nobel.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Tu_Youyou" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Frances Arnold</a></h2>
+              <p class="descricao-meta">
+                Frances Arnold é uma engenheira química americana, laureada com o Prêmio Nobel por suas pesquisas em evolução dirigida para o desenvolvimento de enzimas.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Frances_Arnold" target="_blank">Mais Informações</a>
+            </div>
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Cesar Lattes</a></h2>
+              <p class="descricao-meta">
+                Cesar Lattes foi um físico brasileiro, um dos descobridores do méson pi, uma partícula subatômica, contribuindo significativamente para a física de partículas.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/C%C3%A9sar_Lattes" target="_blank">Mais Informações</a>
+            </div>
+
+            <div class="item-resultado">
+              <h2><a href="#" target="_blank">Ada Lovelace</a></h2>
+              <p class="descricao-meta">
+                Ada Lovelace foi uma matemática inglesa, considerada a primeira programadora da história por seu trabalho pioneiro no algoritmo da máquina analítica de Charles Babbage.
+              </p>
+              <a href="https://pt.wikipedia.org/wiki/Ada_Lovelace" target="_blank">Mais Informações</a>
+            </div>
+            -->
+        </section>
+    </main>
+    <footer>
+        <p>2024 - Cientistas do Mundo. Todos os direitos reservados</p>
+        <p>Entre em contato pelo email: pedro@cientistas.com.br</p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app copy.js"></script>
+
+</body>
+
+</html>
