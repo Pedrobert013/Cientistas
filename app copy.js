@@ -2,7 +2,7 @@ function pesquisar() {
     // Seleciona o elemento HTML onde os resultados da pesquisa serão exibidos
     let section = document.getElementById("resultados-pesquisa");
   
-    // Obtém o termo de pesquisa digitado pelo usuário e converte para minúsculas
+    // Obtém o termo de pesquisa digitado pelo usuário
     let campo_pesquisa = document.getElementById("campo-pesquisa").value;
   
     // Torna possivel a leitura de caracteres minúsculos pelo campo de pesquisa, facilitando a comparação
