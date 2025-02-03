@@ -26,24 +26,4 @@ Essa aplicação web te convida a explorar a vida e as conquistas de grandes cie
 * **Todos os cientistas:** Quer ver a lista completa? Digite apenas "todos".
 * **Mais informações:** Cada resultado te leva para a Wikipédia, onde você pode explorar ainda mais a vida e obra de cada cientista.
 
-### Quer contribuir?
-
-Quer ajudar a tornar essa aplicação ainda melhor? Todo mundo é bem-vindo! Você pode:
-
-* **Corrigir erros:** Achou algum bug? Avise a gente!
-* **Adicionar novos cientistas:** Conhece algum gênio que não está na lista? Adicione!
-* **Melhorar o visual:** Tem ideias para deixar a página mais bonita? Compartilhe!
-* **Criar novas funcionalidades:** Que tal adicionar filtros por área de conhecimento ou um modo escuro?
-
-**Junte-se a nós e faça parte da história da ciência!**
-
-**Link para o repositório:** [Inserir o link do seu repositório no GitHub]
-
-**Observações:**
-
-* **Personalize:** Adapte este README com mais detalhes sobre o projeto, como a motivação para criá-lo, as tecnologias utilizadas e os próximos passos.
-* **Imagens:** Adicione imagens para ilustrar o projeto e torná-lo mais visualmente atraente.
-* **Licença:** Indique a licença do projeto, como MIT ou Apache, para que outros possam contribuir e usar o código livremente.
-* **Agradecimentos:** Agradeça a qualquer pessoa que tenha contribuído para o projeto.
-
 **Feito na Imersão Dev**
